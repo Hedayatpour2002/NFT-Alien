@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--css style-->
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!--icons link-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>NFT Alien</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="#" class="logo">
+            <img
+              src="images/header/logo.png"
+              alt="NFT Alien logo"
+              class="logo-image"
+            />
+            <span class="logo-text">NFTALIEN</span>
+          </a>
+
+          <ul class="menu">
+            <li class="home">
+              <a href="#"
+                >HOME
+                <span class="material-symbols-outlined"> expand_more </span></a
+              >
+            </li>
+            <li class="about">
+              <a href="#"
+                >ABOUT
+                <span class="material-symbols-outlined"> expand_more </span>
+              </a>
+            </li>
+            <li class="roadmap">
+              <a href="#"
+                >ROADMAP
+                <span class="material-symbols-outlined"> expand_more </span>
+              </a>
+            </li>
+            <li class="collection"><a href="#">COLLECTION</a></li>
+            <li class="faqs">
+              <a href="#"
+                >FAQS
+                <span class="material-symbols-outlined"> expand_more </span></a
+              >
+            </li>
+          </ul>
+
+          <div class="feature">
+            <img src="images/header/switch.png" alt="" class="switch" />
+
+            <a href="#" class="discord">
+              <i class="fa-brands fa-discord discord-icon"></i>
+              <span class="discord-text">DISCORD</span>
+            </a>
+            <a href="#" class="wallet">
+              <i class="fa-solid fa-wallet"></i>
+              <span class="wallet-text"> CONNECT </span>
+            </a>
+          </div>
+          <div class="alt-feature">
+            <a class="alt-feature-button">
+              MORE
+              <span class="material-symbols-outlined"> expand_more </span>
+            </a>
+            <div class="alt-feature-hover">
+              <img src="images/header/switch.png" alt="" id="alt-switch" />
+
+              <a href="#" id="alt-discord">
+                <i class="fa-brands fa-discord discord-icon"></i>
+                <span id="alt-discord-text">DISCORD</span>
+              </a>
+              <a href="#" id="alt-wallet">
+                <i class="fa-solid fa-wallet"></i>
+                <span id="alt-wallet-text"> CONNECT </span>
+              </a>
+            </div>
+          </div>
+          <i
+            class="fa-solid fa-bars"
+            id="mobile-menu-icon"
+            onclick="myFun()"
+          ></i>
+        </nav>
+
+        <div class="mobile-menu" id="mobile-menu">
+          <i
+            class="fa-solid fa-xmark"
+            id="mobile-menu-icon-exit"
+            onclick="myFun1()"
+          ></i>
+          <ul class="mobile-menu-list">
+            <li class="home">
+              <a href="#"
+                >HOME
+                <span class="material-symbols-outlined"> expand_more </span></a
+              >
+            </li>
+            <li class="about">
+              <a href="#"
+                >ABOUT
+                <span class="material-symbols-outlined"> expand_more </span>
+              </a>
+            </li>
+            <li class="roadmap">
+              <a href="#"
+                >ROADMAP
+                <span class="material-symbols-outlined"> expand_more </span>
+              </a>
+            </li>
+            <li class="collection"><a href="#">COLLECTION</a></li>
+            <li class="faqs">
+              <a href="#"
+                >FAQS
+                <span class="material-symbols-outlined"> expand_more </span></a
+              >
+            </li>
+          </ul>
+          <div class="mobile-feature">
+            <div class="mobile-feature-buttn">
+              <a href="#" id="mobile-discord">
+                <i class="fa-brands fa-discord discord-icon"></i>
+                <span id="mobile-discord-text">DISCORD</span>
+              </a>
+              <a href="#" id="mobile-wallet">
+                <i class="fa-solid fa-wallet"></i>
+                <span id="mobile-wallet-text"> CONNECT </span>
+              </a>
+            </div>
+            <img src="images/header/switch.png" alt="" id="mobile-switch" />
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <h1 class="heading">EXPLORE NFT COLLECTION</h1>
+        <p class="heading-desc">
+          A collection of 2525 highly-fashionable NFTs on the ETH Blockchain.
+          Unique, metaverse-ready, and designed to benefit their holders.
+        </p>
+        <div class="button">
+          <a href="#" class="connect-wallet">CONNECT WALLET</a>
+          <a href="#" class="whitelist-now">WHITELIST NOW</a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <section class="how-to">
+          <h2 class="work-title">
+            HOW TO <span class="green-text">NFTALIEN</span> WORK
+          </h2>
+          <div class="steps">
+            <div class="steps-item hover-on">
+              <img src="images/how-to/step-1.png" alt="" class="step1-image" />
+              <div class="steps-content">
+                <p class="steps-title">STEP 1</p>
+                <p class="steps-desc">Connect Your Wallet</p>
+              </div>
+              <div class="hover">
+                <img src="images/how-to/hover/1.png" class="image-top-left" />
+                <img
+                  src="images/how-to/hover/2.png"
+                  class="image-bottom-right"
+                />
+              </div>
+            </div>
+
+            <div class="steps-item hover-on">
+              <img src="images/how-to/step-2.png" alt="" class="step2-image" />
+              <div class="steps-content steps-content-2">
+                <p class="steps-title">STEP 2</p>
+                <p class="steps-desc">Select Your Quaility</p>
+              </div>
+              <div class="hover">
+                <img src="images/how-to/hover/1.png" class="image-top-left" />
+                <img
+                  src="images/how-to/hover/2.png"
+                  class="image-bottom-right"
+                />
+              </div>
+            </div>
+            <div class="steps-item hover-on">
+              <img src="images/how-to/step-3.png" alt="" class="step3-image" />
+              <div class="steps-content">
+                <p class="steps-title">STEP 3</p>
+                <p class="steps-desc">Confirm the Transaction</p>
+              </div>
+              <div class="hover">
+                <img src="images/how-to/hover/1.png" class="image-top-left" />
+                <img
+                  src="images/how-to/hover/2.png"
+                  class="image-bottom-right"
+                />
+              </div>
+            </div>
+            <div class="steps-item hover-on">
+              <img src="images/how-to/step-4.png" alt="" class="step4-image" />
+              <div class="steps-content">
+                <p class="steps-title">STEP 4</p>
+                <p class="steps-desc">receive Your NFTs</p>
+              </div>
+              <div class="hover">
+                <img src="images/how-to/hover/1.png" class="image-top-left" />
+                <img
+                  src="images/how-to/hover/2.png"
+                  class="image-bottom-right"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="hot-collection">
+          <h2 class="collection-title">HOT COLLECTION</h2>
+          <div class="collections">
+            <div class="collection-box hover-on">
+              <img src="images/hot-collection/alien-1.png" alt="" />
+              <p class="collection-name">SKISIRS #02</p>
+              <div class="hover">
+                <img src="images/how-to/hover/1.png" class="image-top-left" />
+                <img
+                  src="images/how-to/hover/2.png"
+                  class="image-bottom-right"
+                />
+              </div>
+            </div>
+            <div class="collection-box hover-on">
+              <img src="images/hot-collection/alien-2.png" alt="" />
+              <p class="collection-name">SKISIRS #02</p>
+              <div class="hover">
+                <img src="images/how-to/hover/1.png" class="image-top-left" />
+                <img
+                  src="images/how-to/hover/2.png"
+                  class="image-bottom-right"
+                />
+              </div>
+            </div>
+            <div class="collection-box hover-on">
+              <img src="images/hot-collection/alien-3.png" alt="" />
+              <p class="collection-name">SKISIRS #02</p>
+              <div class="hover">
+                <img src="images/how-to/hover/1.png" class="image-top-left" />
+                <img
+                  src="images/how-to/hover/2.png"
+                  class="image-bottom-right"
+                />
+              </div>
+            </div>
+            <div class="collection-box hover-on">
+              <img src="images/hot-collection/alien-4.png" alt="" />
+              <p class="collection-name">SKISIRS #02</p>
+              <div class="hover">
+                <img src="images/how-to/hover/1.png" class="image-top-left" />
+                <img
+                  src="images/how-to/hover/2.png"
+                  class="image-bottom-right"
+                />
+              </div>
+            </div>
+            <div class="collection-box hover-on">
+              <img src="images/hot-collection/alien-5.png" alt="" />
+              <p class="collection-name">SKISIRS #02</p>
+              <div class="hover">
+                <img src="images/how-to/hover/1.png" class="image-top-left" />
+                <img
+                  src="images/how-to/hover/2.png"
+                  class="image-bottom-right"
+                />
+              </div>
+            </div>
+            <div class="collection-box hover-on">
+              <img src="images/hot-collection/alien-6.png" alt="" />
+              <p class="collection-name">SKISIRS #02</p>
+              <div class="hover">
+                <img src="images/how-to/hover/1.png" class="image-top-left" />
+                <img
+                  src="images/how-to/hover/2.png"
+                  class="image-bottom-right"
+                />
+              </div>
+            </div>
+            <div class="collection-box hover-on">
+              <img src="images/hot-collection/alien-7.png" alt="" />
+              <p class="collection-name">SKISIRS #02</p>
+              <div class="hover">
+                <img src="images/how-to/hover/1.png" class="image-top-left" />
+                <img
+                  src="images/how-to/hover/2.png"
+                  class="image-bottom-right"
+                />
+              </div>
+            </div>
+            <div class="collection-box hover-on">
+              <img src="images/hot-collection/alien-8.png" alt="" />
+              <p class="collection-name">SKISIRS #02</p>
+              <div class="hover">
+                <img src="images/how-to/hover/1.png" class="image-top-left" />
+                <img
+                  src="images/how-to/hover/2.png"
+                  class="image-bottom-right"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about-us">
+          <!--
+          <aside class="snow">
+            <img src="images/about-us/Vector.png" alt="" class="snow-img-1" />
+            <img src="images/about-us/Vector-1.png" alt="" class="snow-img-2" />
+          </aside>
+          -->
+          <div class="left">
+            <h2 class="the-story">THE STORY</h2>
+            <p class="about-left-desc">
+              Our collection's priority is to reward NFT holders by developing
+              utilities they can use in their current everyday life. Not in a
+              hypothetical future.
+            </p>
+            <div class="number-title">
+              <p class="total-item">Total Iteam</p>
+              <p class="profiles-whitelisted">Profiles whitelisted</p>
+            </div>
+            <div class="about-left-number">
+              <p class="total-item-number">2240+</p>
+              <p class="profiles-whitelisted-number">1000+</p>
+            </div>
+            <a href="#" class="about-read-more">READ MORE</a>
+          </div>
+          <div class="right">
+            <div class="about-item hover-on">
+              <div class="for-set-posision">
+                <p class="about-number">01</p>
+                <p class="about-title">Daily Tokens</p>
+              </div>
+              <p class="about-desc">
+                Earn interstellar tokens passively by staking your collectible
+                NFT.
+              </p>
+              <div class="hover">
+                <img src="images/how-to/hover/1.png" class="image-top-left" />
+                <img
+                  src="images/how-to/hover/2.png"
+                  class="image-bottom-right"
+                />
+              </div>
+            </div>
+
+            <div class="about-item hover-on">
+              <div class="for-set-posision">
+                <p class="about-number">02</p>
+                <p class="about-title">Exclusive Discounts</p>
+              </div>
+              <p class="about-desc">
+                Tokens and NFTs can be used for discounts at top fashion brands.
+              </p>
+              <div class="hover">
+                <img src="images/how-to/hover/1.png" class="image-top-left" />
+                <img
+                  src="images/how-to/hover/2.png"
+                  class="image-bottom-right"
+                />
+              </div>
+            </div>
+            <div class="about-item hover-on">
+              <div class="for-set-posision">
+                <p class="about-number">03</p>
+                <p class="about-title">Galactic Merch</p>
+              </div>
+              <p class="about-desc">
+                Members-only merch designed by David and other world-renowned
+                artists.
+              </p>
+              <div class="hover">
+                <img src="images/how-to/hover/1.png" class="image-top-left" />
+                <img
+                  src="images/how-to/hover/2.png"
+                  class="image-bottom-right"
+                />
+              </div>
+            </div>
+            <div class="about-item hover-on">
+              <div class="for-set-posision">
+                <p class="about-number">04</p>
+                <p class="about-title">Limited-Edition Collabs</p>
+              </div>
+              <p class="about-desc">
+                Get limited-edition items from Alienverse collabs with fashion
+                and luxury brands.
+              </p>
+              <div class="hover">
+                <img src="images/how-to/hover/1.png" class="image-top-left" />
+                <img
+                  src="images/how-to/hover/2.png"
+                  class="image-bottom-right"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="partner">
+          <h2 class="partner-title">
+            <span class="green-text">BINABOX</span> PARTNER
+          </h2>
+          <div class="partner-images">
+            <img src="images/partner/1.png" alt="" />
+            <img src="images/partner/2.png" alt="" />
+            <img src="images/partner/3.png" alt="" />
+            <img src="images/partner/4.png" alt="" />
+            <img src="images/partner/5.png" alt="" />
+            <img src="images/partner/6.png" alt="" />
+            <img src="images/partner/7.png" alt="" />
+            <img src="images/partner/8.png" alt="" />
+            <img src="images/partner/9.png" alt="" />
+            <img src="images/partner/10.png" alt="" />
+            <img src="images/partner/11.png" alt="" />
+            <img src="images/partner/12.png" alt="" />
+            <img src="images/partner/13.png" alt="" />
+            <img src="images/partner/14.png" alt="" />
+            <img src="images/partner/15.png" alt="" />
+            <img src="images/partner/16.png" alt="" />
+            <img src="images/partner/17.png" alt="" />
+            <img src="images/partner/18.png" alt="" />
+          </div>
+          <!--
+          <aside class="snow">
+            <img src="images/about-us/Vector-1.png" alt="" class="snow-img-3" />
+          </aside>
+          -->
+        </section>
+      </div>
+    </main>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
